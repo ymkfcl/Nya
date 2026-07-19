@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NiaQuiz | Quiz multijoueur gaming</title>
+    <meta
+      name="description"
+      content="NiaQuiz est une interface de quiz culture multijoueur premium pour défier tes amis en temps réel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#" aria-label="Accueil NiaQuiz">
+        <span class="logo-mark">NQ</span>
+        <span>NiaQuiz</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#hero">Accueil</a>
+        <a href="#ranking">Classement</a>
+        <a href="#daily">Quiz du jour</a>
+        <a href="#profile">Profil</a>
+      </nav>
+      <button class="profile-button" type="button">Profil</button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Quiz culture multijoueur</p>
+          <h1>Teste ta culture, détrône tes potes</h1>
+          <p class="hero-text">
+            Crée un salon, choisis tes thèmes, règle la difficulté et lance une partie
+            explosive avec chronomètre, classement live et questions ultra variées.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <button class="btn btn-primary" type="button">Créer un salon</button>
+            <button class="btn btn-secondary" type="button">Rejoindre un salon</button>
+          </div>
+        </div>
+
+        <aside class="game-preview" aria-label="Aperçu de partie NiaQuiz">
+          <div class="score-strip">
+            <span>🔥 Lina · 1280</span>
+            <span>⚡ Nox · 1190</span>
+            <span>🎯 Aya · 1040</span>
+          </div>
+          <div class="timer" aria-label="Chronomètre circulaire">
+            <span>15</span>
+            <small>sec</small>
+          </div>
+          <article class="question-card">
+            <span class="question-tag">Question éclair</span>
+            <h2>Quel pays possède le plus de fuseaux horaires ?</h2>
+            <div class="answers">
+              <button type="button">Russie</button>
+              <button type="button" class="is-correct">France</button>
+              <button type="button">États-Unis</button>
+              <button type="button">Chine</button>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="control-grid" aria-label="Configuration de la partie">
+        <article class="panel themes-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Sélection</p>
+            <h2>Thèmes</h2>
+          </div>
+          <div class="theme-grid">
+            <button type="button">🌍 Géographie</button>
+            <button type="button">🏛️ Histoire</button>
+            <button type="button">🔬 Sciences</button>
+            <button type="button">🎬 Cinéma</button>
+            <button type="button">🎮 Jeux vidéo</button>
+            <button type="button">🏆 Sport</button>
+            <button type="button">🎵 Musique</button>
+            <button type="button">⚡ Mythologie</button>
+            <button type="button">🖤 Dark Romance</button>
+            <button type="button">🧩 Énigmes</button>
+            <button type="button">🌐 Internet</button>
+            <button type="button">📚 Littérature</button>
+          </div>
+        </article>
+
+        <article class="panel options-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Modes</p>
+            <h2>Types de questions</h2>
+          </div>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" checked /> QCM</label>
+            <label><input type="checkbox" checked /> Vrai/Faux</label>
+            <label><input type="checkbox" /> Drapeaux</label>
+            <label><input type="checkbox" /> Carte</label>
+            <label><input type="checkbox" /> Réponse écrite</label>
+            <label><input type="checkbox" /> Deviner le film</label>
+            <label><input type="checkbox" /> Deviner la musique</label>
+            <label><input type="checkbox" checked /> Question éclair</label>
+            <label><input type="checkbox" /> Qui suis-je</label>
+            <label><input type="checkbox" /> Mort subite</label>
+          </div>
+
+          <div class="match-settings">
+            <fieldset>
+              <legend>Difficulté</legend>
+              <div class="difficulty-tabs">
+                <label><input type="radio" name="difficulty" /> Facile</label>
+                <label><input type="radio" name="difficulty" checked /> Moyen</label>
+                <label><input type="radio" name="difficulty" /> Difficile</label>
+                <label><input type="radio" name="difficulty" /> Aléatoire</label>
+              </div>
+            </fieldset>
+            <label class="select-label">
+              Nombre de questions
+              <select>
+                <option>10 questions</option>
+                <option selected>20 questions</option>
+                <option>30 questions</option>
+                <option>50 questions</option>
+              </select>
+            </label>
+          </div>
+          <button class="launch-button" type="button">Lancer la partie</button>
+        </article>
+      </section>
+
+      <section class="dashboard" id="ranking">
+        <article class="panel leaderboard">
+          <div class="section-heading">
+            <p class="eyebrow">Temps réel</p>
+            <h2>Classement live</h2>
+          </div>
+          <ol>
+            <li><span class="avatar">🦊</span><strong>NiaQueen</strong><em>2 480 pts</em></li>
+            <li><span class="avatar">🐉</span><strong>NeoMax</strong><em>2 210 pts</em></li>
+            <li><span class="avatar">🦄</span><strong>MayaPop</strong><em>1 990 pts</em></li>
+            <li><span class="avatar">🤖</span><strong>ByteLord</strong><em>1 730 pts</em></li>
+          </ol>
+        </article>
+
+        <article class="panel daily-card" id="daily">
+          <p class="eyebrow">Quiz du jour</p>
+          <h2>Culture pop 2000</h2>
+          <p>30 questions, bonus vitesse x2, thème surprise au round final.</p>
+          <button class="btn btn-secondary" type="button">Voir le défi</button>
+        </article>
+      </section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+      <a href="#hero">🏠<span>Accueil</span></a>
+      <a href="#ranking">🏆<span>Score</span></a>
+      <a href="#daily">⚡<span>Daily</span></a>
+      <a href="#profile">👤<span>Profil</span></a>
+    </nav>
+  </body>
+</html>
